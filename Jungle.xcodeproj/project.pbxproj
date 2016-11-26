@@ -146,7 +146,6 @@
 				TargetAttributes = {
 					88221BD11DEA56E8001DE416 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = W2P5R7TX5B;
 						ProvisioningStyle = Automatic;
 					};
 					88221BE51DEA56E8001DE416 = {
@@ -339,7 +338,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = W2P5R7TX5B;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Jungle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jungle.Jungle;
@@ -352,7 +351,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = W2P5R7TX5B;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Jungle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jungle.Jungle;
