@@ -7,12 +7,24 @@
 //
 
 import UIKit
+import FBSDKLoginKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let centerx = self.view.center.x
+        let centery = self.view.center.y
+        
+        let loginButton = FBSDKLoginButton()
+        
+        
+        loginButton.center = CGPoint(x: centerx, y: centery + CGFloat(centery/3))
+        self.view.addSubview(loginButton)
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
