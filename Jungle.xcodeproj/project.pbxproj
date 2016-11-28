@@ -13,6 +13,7 @@
 		88221BDD1DEA56E8001DE416 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88221BDC1DEA56E8001DE416 /* Assets.xcassets */; };
 		88221BE01DEA56E8001DE416 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88221BDE1DEA56E8001DE416 /* LaunchScreen.storyboard */; };
 		88221BEB1DEA56E8001DE416 /* JungleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88221BEA1DEA56E8001DE416 /* JungleTests.swift */; };
+		88221BF71DEBBA9A001DE416 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88221BF61DEBBA9A001DE416 /* FBSDKLoginKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		88221BE61DEA56E8001DE416 /* JungleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JungleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88221BEA1DEA56E8001DE416 /* JungleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JungleTests.swift; sourceTree = "<group>"; };
 		88221BEC1DEA56E8001DE416 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88221BF61DEBBA9A001DE416 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../../FacebookSDKs-iOS-4.17.0/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88221BF71DEBBA9A001DE416 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +62,7 @@
 		88221BC91DEA56E8001DE416 = {
 			isa = PBXGroup;
 			children = (
+				88221BF51DEBBA3A001DE416 /* Frameworks */,
 				88221BD41DEA56E8001DE416 /* Jungle */,
 				88221BE91DEA56E8001DE416 /* JungleTests */,
 				88221BD31DEA56E8001DE416 /* Products */,
@@ -94,6 +98,15 @@
 				88221BEC1DEA56E8001DE416 /* Info.plist */,
 			);
 			path = JungleTests;
+			sourceTree = "<group>";
+		};
+		88221BF51DEBBA3A001DE416 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88221BF61DEBBA9A001DE416 /* FBSDKLoginKit.framework */,
+			);
+			name = Frameworks;
+			path = Jungle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
