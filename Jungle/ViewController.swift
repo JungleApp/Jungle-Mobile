@@ -18,7 +18,11 @@ class ViewController: UIViewController {
         let centerx = self.view.center.x
         let centery = self.view.center.y
         
-        let loginButton = FBSDKLoginButton()
+        let loginButton: FBSDKLoginButton = {
+            let button = FBSDKLoginButton()
+            button.readPermissions = ["email"]
+            return button
+        }()
         
         
         loginButton.center = CGPoint(x: centerx, y: centery + CGFloat(centery/3))
