@@ -20,7 +20,9 @@
 		8877FC1B1E0DC33D000CC844 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8877FC1A1E0DC33D000CC844 /* EventsViewController.swift */; };
 		8877FC1D1E0DC361000CC844 /* OrganizationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8877FC1C1E0DC361000CC844 /* OrganizationsViewController.swift */; };
 		8877FC1F1E0DC369000CC844 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8877FC1E1E0DC369000CC844 /* UserProfileViewController.swift */; };
-		88EFFE4E1E120074001FFA40 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EFFE4D1E120074001FFA40 /* HomeTableViewController.swift */; };
+		88EFFE511E1202B7001FFA40 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EFFE4F1E1202B7001FFA40 /* HomeTableViewCell.swift */; };
+		88EFFE521E1202B7001FFA40 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88EFFE501E1202B7001FFA40 /* HomeTableViewCell.xib */; };
+		88EFFE541E120334001FFA40 /* HomeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EFFE531E120334001FFA40 /* HomeTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +53,9 @@
 		8877FC1A1E0DC33D000CC844 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		8877FC1C1E0DC361000CC844 /* OrganizationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrganizationsViewController.swift; sourceTree = "<group>"; };
 		8877FC1E1E0DC369000CC844 /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
-		88EFFE4D1E120074001FFA40 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		88EFFE4F1E1202B7001FFA40 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		88EFFE501E1202B7001FFA40 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		88EFFE531E120334001FFA40 /* HomeTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		88221BC91DEA56E8001DE416 = {
 			isa = PBXGroup;
 			children = (
+				88EFFE531E120334001FFA40 /* HomeTableView.swift */,
 				88221BF51DEBBA3A001DE416 /* Frameworks */,
 				88221BD41DEA56E8001DE416 /* Jungle */,
 				88221BE91DEA56E8001DE416 /* JungleTests */,
@@ -99,7 +104,8 @@
 				88221BD51DEA56E8001DE416 /* AppDelegate.swift */,
 				88221BD71DEA56E8001DE416 /* ViewController.swift */,
 				88221BD91DEA56E8001DE416 /* Main.storyboard */,
-				88EFFE4D1E120074001FFA40 /* HomeTableViewController.swift */,
+				88EFFE4F1E1202B7001FFA40 /* HomeTableViewCell.swift */,
+				88EFFE501E1202B7001FFA40 /* HomeTableViewCell.xib */,
 				8877FC161E0DC2FF000CC844 /* HomeViewController.swift */,
 				8877FC181E0DC326000CC844 /* GroupsViewController.swift */,
 				8877FC1A1E0DC33D000CC844 /* EventsViewController.swift */,
@@ -217,6 +223,7 @@
 			files = (
 				88221BE01DEA56E8001DE416 /* LaunchScreen.storyboard in Resources */,
 				88221BDD1DEA56E8001DE416 /* Assets.xcassets in Resources */,
+				88EFFE521E1202B7001FFA40 /* HomeTableViewCell.xib in Resources */,
 				88221BDB1DEA56E8001DE416 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,12 +242,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88EFFE4E1E120074001FFA40 /* HomeTableViewController.swift in Sources */,
+				88EFFE541E120334001FFA40 /* HomeTableView.swift in Sources */,
 				8877FC191E0DC326000CC844 /* GroupsViewController.swift in Sources */,
 				88221BD81DEA56E8001DE416 /* ViewController.swift in Sources */,
 				8877FC1F1E0DC369000CC844 /* UserProfileViewController.swift in Sources */,
 				88221BD61DEA56E8001DE416 /* AppDelegate.swift in Sources */,
 				8877FC171E0DC2FF000CC844 /* HomeViewController.swift in Sources */,
+				88EFFE511E1202B7001FFA40 /* HomeTableViewCell.swift in Sources */,
 				8877FC1B1E0DC33D000CC844 /* EventsViewController.swift in Sources */,
 				8877FC1D1E0DC361000CC844 /* OrganizationsViewController.swift in Sources */,
 			);
