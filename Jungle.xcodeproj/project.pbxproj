@@ -20,6 +20,7 @@
 		8877FC1B1E0DC33D000CC844 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8877FC1A1E0DC33D000CC844 /* EventsViewController.swift */; };
 		8877FC1D1E0DC361000CC844 /* OrganizationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8877FC1C1E0DC361000CC844 /* OrganizationsViewController.swift */; };
 		8877FC1F1E0DC369000CC844 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8877FC1E1E0DC369000CC844 /* UserProfileViewController.swift */; };
+		88EFFE4E1E120074001FFA40 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EFFE4D1E120074001FFA40 /* HomeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		8877FC1A1E0DC33D000CC844 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		8877FC1C1E0DC361000CC844 /* OrganizationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrganizationsViewController.swift; sourceTree = "<group>"; };
 		8877FC1E1E0DC369000CC844 /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		88EFFE4D1E120074001FFA40 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				88221BD51DEA56E8001DE416 /* AppDelegate.swift */,
 				88221BD71DEA56E8001DE416 /* ViewController.swift */,
 				88221BD91DEA56E8001DE416 /* Main.storyboard */,
+				88EFFE4D1E120074001FFA40 /* HomeTableViewController.swift */,
 				8877FC161E0DC2FF000CC844 /* HomeViewController.swift */,
 				8877FC181E0DC326000CC844 /* GroupsViewController.swift */,
 				8877FC1A1E0DC33D000CC844 /* EventsViewController.swift */,
@@ -232,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88EFFE4E1E120074001FFA40 /* HomeTableViewController.swift in Sources */,
 				8877FC191E0DC326000CC844 /* GroupsViewController.swift in Sources */,
 				88221BD81DEA56E8001DE416 /* ViewController.swift in Sources */,
 				8877FC1F1E0DC369000CC844 /* UserProfileViewController.swift in Sources */,

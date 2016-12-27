@@ -9,7 +9,10 @@
 import UIKit
 import FBSDKLoginKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, FBSDKLoginButtonDelegate {
+    
+    @IBOutlet weak var loginButton: UIButton!
+    
     
     override func viewDidLoad() {
         
@@ -36,6 +39,23 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
+    public func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
+        
+        performSegue(withIdentifier: "mainEntry", sender: self)
+    }
+    
+    
+    
+    public func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
+        
+    }
+    
+    
+    @IBAction func performLogin(_ sender: AnyObject) {
+        
+    }
+    
 
 }
 
