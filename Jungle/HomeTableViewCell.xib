@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -12,28 +13,46 @@
             <rect key="frame" x="0.0" y="0.0" width="431" height="234"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <frame key="frameInset" width="431" height="233.5"/>
+                <frame key="frameInset" width="431" height="234"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mmg-2q-k53">
-                        <frame key="frameInset" minY="67" width="431" height="167"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Maple Smith" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkN-EG-HYm">
-                        <frame key="frameInset" minX="34" minY="23" width="96" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mmg-2q-k53"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maple Smith" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkN-EG-HYm">
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="V" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjy-uq-5Sq">
-                        <frame key="frameInset" minX="153" minY="19" width="25" height="36"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdU-X7-uK7">
+                        <frame key="frameInset" minX="203" minY="24" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pbm-N2-MBA">
+                        <frame key="frameInset" minX="164" minY="19" width="31" height="30"/>
+                        <state key="normal" title="Button" image="uparrow"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uwg-aa-xeg">
+                        <frame key="frameInset" minX="253" minY="19" width="31" height="30"/>
+                        <state key="normal" title="Button" image="downarrow"/>
+                    </button>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="mmg-2q-k53" secondAttribute="bottom" constant="-8" id="3S7-LR-6md"/>
+                    <constraint firstItem="mmg-2q-k53" firstAttribute="top" secondItem="hdU-X7-uK7" secondAttribute="bottom" constant="22" id="AHG-Y3-Dwn"/>
+                    <constraint firstItem="vkN-EG-HYm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="26" id="FJp-zc-gdS"/>
+                    <constraint firstItem="mmg-2q-k53" firstAttribute="top" secondItem="Uwg-aa-xeg" secondAttribute="bottom" constant="18" id="GgX-pY-4EN"/>
+                    <constraint firstItem="Pbm-N2-MBA" firstAttribute="leading" secondItem="vkN-EG-HYm" secondAttribute="trailing" constant="34" id="Ln0-nt-Rgi"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="mmg-2q-k53" secondAttribute="trailing" constant="-8" id="X3D-yd-Zjo"/>
+                    <constraint firstItem="Uwg-aa-xeg" firstAttribute="leading" secondItem="hdU-X7-uK7" secondAttribute="trailing" constant="8" id="X66-ud-g3Z"/>
+                    <constraint firstItem="mmg-2q-k53" firstAttribute="top" secondItem="Pbm-N2-MBA" secondAttribute="bottom" constant="18" id="efm-YD-6OH"/>
+                    <constraint firstItem="mmg-2q-k53" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="59" id="evi-ey-DRZ"/>
+                    <constraint firstItem="Pbm-N2-MBA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="11" id="lnn-DJ-MQ9"/>
+                    <constraint firstItem="vkN-EG-HYm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="15" id="pPR-JL-cSU"/>
+                    <constraint firstItem="Uwg-aa-xeg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="11" id="qR3-6P-RL1"/>
+                    <constraint firstItem="mmg-2q-k53" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="uJe-p0-66R"/>
+                    <constraint firstItem="hdU-X7-uK7" firstAttribute="leading" secondItem="Pbm-N2-MBA" secondAttribute="trailing" constant="8" id="xwT-sd-clp"/>
+                </constraints>
             </tableViewCellContentView>
             <point key="canvasLocation" x="38.5" y="31"/>
         </tableViewCell>
@@ -42,4 +61,8 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
         </activityIndicatorView>
     </objects>
+    <resources>
+        <image name="downarrow" width="128" height="128"/>
+        <image name="uparrow" width="128" height="128"/>
+    </resources>
 </document>
