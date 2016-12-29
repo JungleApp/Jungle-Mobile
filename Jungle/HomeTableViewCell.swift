@@ -9,16 +9,21 @@
 import UIKit
 
 class HomeTableViewCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    @IBOutlet weak var votesLabel: UILabel!
+    
+    @IBOutlet weak var postImageView: UIImageView!
+    
+    @IBAction func voteUpTouch(_ sender: AnyObject) {
+        print("Voted up!")
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    
+    @IBAction func voteDownTouch(_ sender: AnyObject) {
+        print("Voted down!")
     }
+    
     
 }

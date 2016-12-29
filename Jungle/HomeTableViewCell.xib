@@ -31,10 +31,16 @@
                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pbm-N2-MBA">
                         <frame key="frameInset" minX="164" minY="19" width="31" height="30"/>
                         <state key="normal" title="Button" image="uparrow"/>
+                        <connections>
+                            <action selector="voteUpTouch:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="SXS-Ru-KCS"/>
+                        </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uwg-aa-xeg">
                         <frame key="frameInset" minX="253" minY="19" width="31" height="30"/>
                         <state key="normal" title="Button" image="downarrow"/>
+                        <connections>
+                            <action selector="voteDownTouch:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="tT4-WD-k3H"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>
@@ -54,6 +60,11 @@
                     <constraint firstItem="hdU-X7-uK7" firstAttribute="leading" secondItem="Pbm-N2-MBA" secondAttribute="trailing" constant="8" id="xwT-sd-clp"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="vkN-EG-HYm" id="fmf-WW-xJe"/>
+                <outlet property="postImageView" destination="mmg-2q-k53" id="8kW-wM-8GN"/>
+                <outlet property="votesLabel" destination="hdU-X7-uK7" id="qP9-YP-JtQ"/>
+            </connections>
             <point key="canvasLocation" x="38.5" y="31"/>
         </tableViewCell>
         <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" id="Kh7-vV-7jM">
