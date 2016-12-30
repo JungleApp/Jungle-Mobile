@@ -22,21 +22,26 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdU-X7-uK7">
-                        <frame key="frameInset" minX="203" minY="24" width="42" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdU-X7-uK7">
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pbm-N2-MBA">
-                        <frame key="frameInset" minX="164" minY="19" width="31" height="30"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pbm-N2-MBA">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="36z-dm-aFK"/>
+                            <constraint firstAttribute="width" constant="31" id="Bb0-5J-xJV"/>
+                        </constraints>
                         <state key="normal" title="Button" image="uparrow"/>
                         <connections>
                             <action selector="voteUpTouch:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="SXS-Ru-KCS"/>
                         </connections>
                     </button>
-                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uwg-aa-xeg">
-                        <frame key="frameInset" minX="253" minY="19" width="31" height="30"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uwg-aa-xeg">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="31" id="4t4-i9-dyR"/>
+                            <constraint firstAttribute="height" constant="30" id="n6N-ao-RUH"/>
+                        </constraints>
                         <state key="normal" title="Button" image="downarrow"/>
                         <connections>
                             <action selector="voteDownTouch:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="tT4-WD-k3H"/>

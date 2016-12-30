@@ -10,7 +10,8 @@ import UIKit
 
 struct CellData {
     let cell: Int!
-    let text: String!
+    let name: String!
+    let votes: Int!
     let image: UIImage!
 }
 
@@ -22,14 +23,15 @@ class HomeTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        cellDataArray = [CellData(cell: 1, text: "Jeremy Johnson", image: #imageLiteral(resourceName: "amazonjungle")),
-                         CellData(cell: 2, text: "Maria Smith", image: #imageLiteral(resourceName: "undertheocean")),
-                         CellData(cell: 3, text: "Marshall Mathers", image: #imageLiteral(resourceName: "outerspace"))]
+        // Placeholder array of Cell Data. Beta version will populate this with data from Facebook
+        // and other social networks available
+        
+        cellDataArray = [CellData(cell: 1, name: "Jeremy Johnson", votes: 50, image: #imageLiteral(resourceName: "amazonjungle")),
+                         CellData(cell: 2, name: "Maria Smith", votes: 129, image: #imageLiteral(resourceName: "undertheocean")),
+                         CellData(cell: 3, name: "Marshall Mathers", votes: 5002, image: #imageLiteral(resourceName: "outerspace"))]
         
         
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,28 +39,32 @@ class HomeTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    /*override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 0
-    }
+    }*/
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        return cellDataArray.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        //let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = Bundle.main.loadNibNamed("HomeTableViewCell", owner: self, options: nil)?.first as! HomeTableViewCell
+        
+        cell.postImageView.image = cellDataArray[indexPath.row].image
+        cell.votesLabel.text = String(cellDataArray[indexPath.row].votes)
+        cell.nameLabel.text = cellDataArray[indexPath.row].name
+        
         return cell
     }
  
-
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 254
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
