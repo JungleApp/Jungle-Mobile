@@ -26,12 +26,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Jungle/HomeTableViewController.swift"
-            timestampString = "504748936.240234"
+            timestampString = "504926925.496154"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Jungle/HomeTableViewCell.swift"
+            timestampString = "504926870.034462"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "voteUpTouch(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

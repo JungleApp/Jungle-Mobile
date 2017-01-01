@@ -17,12 +17,14 @@ class HomeTableViewCell: UITableViewCell {
     @IBOutlet weak var postImageView: UIImageView!
     
     @IBAction func voteUpTouch(_ sender: AnyObject) {
-        print("Voted up!")
+        votesLabel.text = "\(Int(votesLabel.text!)! + 1)"
+        print("Voted up for \(nameLabel.text!)!")
     }
     
     
     @IBAction func voteDownTouch(_ sender: AnyObject) {
-        print("Voted down!")
+        votesLabel.text = "\(Int(votesLabel.text!)! - 1)"
+        print("Voted down for \(nameLabel.text!)!")
     }
     
     
