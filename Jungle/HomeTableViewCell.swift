@@ -15,16 +15,29 @@ class HomeTableViewCell: UITableViewCell {
     @IBOutlet weak var votesLabel: UILabel!
     
     @IBOutlet weak var postImageView: UIImageView!
+    @IBOutlet weak var voteUpButton: UIButton!
+    @IBOutlet weak var voteDownButton: UIButton!
+    
+    
+    @IBAction func voteUpTouchDown(_ sender: AnyObject) {
+        voteUpButton.alpha = 0.4
+    }
     
     @IBAction func voteUpTouch(_ sender: AnyObject) {
         votesLabel.text = "\(Int(votesLabel.text!)! + 1)"
         print("Voted up for \(nameLabel.text!)!")
+        voteUpButton.alpha = 1.0
+    }
+    
+    @IBAction func voteDownTouchDown(_ sender: AnyObject) {
+        voteDownButton.alpha = 0.4
     }
     
     
     @IBAction func voteDownTouch(_ sender: AnyObject) {
         votesLabel.text = "\(Int(votesLabel.text!)! - 1)"
         print("Voted down for \(nameLabel.text!)!")
+        voteDownButton.alpha = 1.0
     }
     
     
