@@ -30,9 +30,11 @@ class HomeTableViewController: UITableViewController {
                          CellData(cell: 2, name: "Maria Smith", votes: 129, image: #imageLiteral(resourceName: "undertheocean")),
                          CellData(cell: 3, name: "Marshall Mathers", votes: 5002, image: #imageLiteral(resourceName: "outerspace"))]
         
+        tableView.contentInset.top = 20
         
 
     }
+    
     
 
     override func didReceiveMemoryWarning() {

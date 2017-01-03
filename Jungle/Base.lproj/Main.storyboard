@@ -108,7 +108,7 @@
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <items>
                                 <navigationItem title="Jungle" id="omW-Ia-ady">
-                                    <barButtonItem key="rightBarButtonItem" id="7fV-F4-vK9"/>
+                                    <barButtonItem key="rightBarButtonItem" image="Search Filled" id="7fV-F4-vK9"/>
                                 </navigationItem>
                             </items>
                         </navigationBar>
@@ -180,5 +180,7 @@
         <image name="Home Filled" width="25" height="25"/>
         <image name="News Filled" width="25" height="25"/>
         <image name="Profile" width="25" height="25"/>
+        <image name="Search Filled" width="25" height="25"/>
     </resources>
+    <color key="tintColor" red="0.2395416796207428" green="0.85121840238571167" blue="0.05555308610200882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
