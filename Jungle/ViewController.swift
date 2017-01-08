@@ -17,6 +17,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(red: 82.0, green: 170.0, blue: 94.0, alpha: 1.0)
         
         let centerx = self.view.center.x
         let centery = self.view.center.y
