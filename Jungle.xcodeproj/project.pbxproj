@@ -17,6 +17,7 @@
 		88221BF91DEC9EF3001DE416 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88221BF81DEC9EF3001DE416 /* FBSDKCoreKit.framework */; };
 		882A2BA21E20507B002E0753 /* OrganizationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882A2BA01E20507B002E0753 /* OrganizationsTableViewController.swift */; };
 		882A2BA31E20507B002E0753 /* OrganizationsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 882A2BA11E20507B002E0753 /* OrganizationsTableViewController.xib */; };
+		882A2BA51E23147B002E0753 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882A2BA41E23147B002E0753 /* HomeViewController.swift */; };
 		8877FC191E0DC326000CC844 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8877FC181E0DC326000CC844 /* GroupsViewController.swift */; };
 		8877FC1B1E0DC33D000CC844 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8877FC1A1E0DC33D000CC844 /* EventsViewController.swift */; };
 		8877FC1D1E0DC361000CC844 /* OrganizationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8877FC1C1E0DC361000CC844 /* OrganizationsViewController.swift */; };
@@ -51,6 +52,7 @@
 		88221BF81DEC9EF3001DE416 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../../FacebookSDKs-iOS-4.17.0/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
 		882A2BA01E20507B002E0753 /* OrganizationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrganizationsTableViewController.swift; sourceTree = "<group>"; };
 		882A2BA11E20507B002E0753 /* OrganizationsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrganizationsTableViewController.xib; sourceTree = "<group>"; };
+		882A2BA41E23147B002E0753 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8877FC181E0DC326000CC844 /* GroupsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
 		8877FC1A1E0DC33D000CC844 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		8877FC1C1E0DC361000CC844 /* OrganizationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrganizationsViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				88221BD51DEA56E8001DE416 /* AppDelegate.swift */,
 				88221BD71DEA56E8001DE416 /* ViewController.swift */,
 				88221BD91DEA56E8001DE416 /* Main.storyboard */,
+				882A2BA41E23147B002E0753 /* HomeViewController.swift */,
 				882A2BA01E20507B002E0753 /* OrganizationsTableViewController.swift */,
 				882A2BA11E20507B002E0753 /* OrganizationsTableViewController.xib */,
 				88EFFE4F1E1202B7001FFA40 /* HomeTableViewCell.swift */,
@@ -251,6 +254,7 @@
 				88221BD81DEA56E8001DE416 /* ViewController.swift in Sources */,
 				8877FC1F1E0DC369000CC844 /* UserProfileViewController.swift in Sources */,
 				88221BD61DEA56E8001DE416 /* AppDelegate.swift in Sources */,
+				882A2BA51E23147B002E0753 /* HomeViewController.swift in Sources */,
 				88EFFE511E1202B7001FFA40 /* HomeTableViewCell.swift in Sources */,
 				8877FC1B1E0DC33D000CC844 /* EventsViewController.swift in Sources */,
 				882A2BA21E20507B002E0753 /* OrganizationsTableViewController.swift in Sources */,

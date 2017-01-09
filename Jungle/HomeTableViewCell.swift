@@ -18,6 +18,15 @@ class HomeTableViewCell: UITableViewCell {
     @IBOutlet weak var voteUpButton: UIButton!
     @IBOutlet weak var voteDownButton: UIButton!
     
+    @IBOutlet weak var organizationStarImageView: UIImageView!
+    
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var profileImageView: UIImageView!
+    
+    override func awakeFromNib() {
+        //profileImageView.layer.cornerRadius = profileImageView.frame.height / 2.0
+        //profileImageView.clipsToBounds = true
+    }
     
     @IBAction func voteUpTouchDown(_ sender: AnyObject) {
         voteUpButton.alpha = 0.4

@@ -17,17 +17,18 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(red: 82.0, green: 170.0, blue: 94.0, alpha: 1.0)
         
         let centerx = self.view.center.x
         let centery = self.view.center.y
         
-        let loginButton: FBSDKLoginButton = {
-            let button = FBSDKLoginButton()
-            button.readPermissions = ["email"]
-            return button
-        }()
+//        let loginButton: FBSDKLoginButton = {
+//            let button = FBSDKLoginButton()
+//            button.readPermissions = ["email"]
+//            return button
+//        }()
         
+        self.view.backgroundColor = UIColor(red: CGFloat(82.0), green: CGFloat(170.0), blue: CGFloat(94.0), alpha: CGFloat(1.0))
+
         
         loginButton.center = CGPoint(x: centerx, y: centery + CGFloat(centery/3))
         self.view.addSubview(loginButton)
