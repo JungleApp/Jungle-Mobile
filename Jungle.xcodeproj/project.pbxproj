@@ -24,7 +24,6 @@
 		8877FC1F1E0DC369000CC844 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8877FC1E1E0DC369000CC844 /* UserProfileViewController.swift */; };
 		88EFFE511E1202B7001FFA40 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EFFE4F1E1202B7001FFA40 /* HomeTableViewCell.swift */; };
 		88EFFE521E1202B7001FFA40 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88EFFE501E1202B7001FFA40 /* HomeTableViewCell.xib */; };
-		88EFFE561E15D5F2001FFA40 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EFFE551E15D5F2001FFA40 /* HomeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +58,6 @@
 		8877FC1E1E0DC369000CC844 /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		88EFFE4F1E1202B7001FFA40 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		88EFFE501E1202B7001FFA40 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
-		88EFFE551E15D5F2001FFA40 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +102,6 @@
 		88221BD41DEA56E8001DE416 /* Jungle */ = {
 			isa = PBXGroup;
 			children = (
-				88EFFE551E15D5F2001FFA40 /* HomeTableViewController.swift */,
 				88221BD51DEA56E8001DE416 /* AppDelegate.swift */,
 				88221BD71DEA56E8001DE416 /* ViewController.swift */,
 				88221BD91DEA56E8001DE416 /* Main.storyboard */,
@@ -249,7 +246,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88EFFE561E15D5F2001FFA40 /* HomeTableViewController.swift in Sources */,
 				8877FC191E0DC326000CC844 /* GroupsViewController.swift in Sources */,
 				88221BD81DEA56E8001DE416 /* ViewController.swift in Sources */,
 				8877FC1F1E0DC369000CC844 /* UserProfileViewController.swift in Sources */,

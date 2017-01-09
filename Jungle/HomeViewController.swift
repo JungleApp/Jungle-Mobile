@@ -29,19 +29,17 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         // Placeholder array of Cell Data. Beta version will populate this with data from Facebook
         // and other social networks available
-        print("HEY HOW IS IT GOING!!!\n\n\n\n\n")
+
         cellDataArray = [CellData(cell: 1, name: "Jeremy Johnson", votes: 50, image: #imageLiteral(resourceName: "amazonjungle"), profile: #imageLiteral(resourceName: "manprofilepic"), location: "San Francisco, CA", isOrg: false),
                          CellData(cell: 2, name: "Maria Smith", votes: 129, image: #imageLiteral(resourceName: "undertheocean"), profile: #imageLiteral(resourceName: "ladyprofilepic"), location: "Atlanta, GA", isOrg: true),
                          CellData(cell: 3, name: "Marshall Mathers", votes: 5002, image: #imageLiteral(resourceName: "outerspace"), profile: #imageLiteral(resourceName: "manprofilepic"), location: "Seattle, WA", isOrg: false)]
         
-        //let nib = UINib(nibName: "HomeTableViewCell", bundle: nil)
+
         self.contentTableView.delegate = self
         self.contentTableView.dataSource = self
-        //contentTableView.register(nib, forCellReuseIdentifier: "HomeCell")
-        //contentTableView.register(nib, forCellReuseIdentifier: "HomeCell")
-        //contentTableView.register
+
         // Setup our refesh control
-        //self.contentTableView.refreshControl?.addTarget(self, action: #selector(HomeViewController.handleRefresh(refreshControl:)), for: UIControlEvents.valueChanged)
+        self.contentTableView.refreshControl?.addTarget(self, action: #selector(HomeViewController.handleRefresh(refreshControl:)), for: UIControlEvents.valueChanged)
         
     }
     
@@ -53,14 +51,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-    
-    /*override func numberOfSections(in tableView: UITableView) -> Int {
-     // #warning Incomplete implementation, return the number of sections
-     return 0
-     }*/
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -69,7 +61,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+
         let cell = Bundle.main.loadNibNamed("HomeTableViewCell", owner: self, options: nil)?.first as! HomeTableViewCell
         
         cell.postImageView.image = cellDataArray[indexPath.row].image
@@ -89,28 +81,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 300
     }
-    /*
-     // Override to support conditional editing of the table view.
-     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-     // Return false if you do not want the specified item to be editable.
-     return true
-     }
-     */
-    
-    /*
-     // Override to support editing the table view.
-     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-     if editingStyle == .delete {
-     // Delete the row from the data source
-     tableView.deleteRows(at: [indexPath], with: .fade)
-     } else if editingStyle == .insert {
-     // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-     }
-     }
-     */
+
     
     /*
      // Override to support rearranging the table view.
