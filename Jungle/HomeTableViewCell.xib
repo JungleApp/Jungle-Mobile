@@ -62,7 +62,7 @@
                             <constraint firstAttribute="width" secondItem="3oE-ox-NWa" secondAttribute="height" multiplier="1:1" id="1Tt-RU-aA3"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdU-X7-uK7">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="99999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdU-X7-uK7">
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -71,7 +71,6 @@
                 <constraints>
                     <constraint firstAttribute="leadingMargin" secondItem="Rcv-Rw-znu" secondAttribute="leading" id="4rk-Vc-XAR"/>
                     <constraint firstAttribute="topMargin" secondItem="3oE-ox-NWa" secondAttribute="top" constant="-10" id="Aqu-Kz-KaU"/>
-                    <constraint firstItem="Pbm-N2-MBA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="282" id="Ijv-Ss-2WW"/>
                     <constraint firstItem="vkN-EG-HYm" firstAttribute="leading" secondItem="Rcv-Rw-znu" secondAttribute="trailing" constant="15" id="OVO-w3-YcA"/>
                     <constraint firstItem="mmg-2q-k53" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="51" id="QGS-NC-Y9g"/>
                     <constraint firstAttribute="trailingMargin" secondItem="mmg-2q-k53" secondAttribute="trailing" constant="-8" id="Sni-u7-ONY"/>
