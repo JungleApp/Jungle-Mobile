@@ -46,7 +46,7 @@ class OrganizationsViewController: UIViewController, UITableViewDelegate, UITabl
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = Bundle.main.loadNibNamed("OrganizationTableViewCell", owner: self, options: nil)?.first as! OrganizationsTableViewCell
+        let cell = Bundle.main.loadNibNamed("OrganizationsTableViewCell", owner: self, options: nil)?.first as! OrganizationsTableViewCell
         
         cell.organizationNameLabel.text = orgDataArray[indexPath.row].name
         cell.openEventsLabel.text = String(orgDataArray[indexPath.row].ongoing)
