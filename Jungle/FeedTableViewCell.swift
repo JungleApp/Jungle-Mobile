@@ -1,5 +1,5 @@
 //
-//  HomeTableViewCell.swift
+//  FeedTableViewCell.swift
 //  Jungle
 //
 //  Created by Jesse Bartola on 12/26/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeTableViewCell: UITableViewCell {
+class FeedTableViewCell: UITableViewCell {
     
     @IBOutlet weak var nameLabel: UILabel!
     

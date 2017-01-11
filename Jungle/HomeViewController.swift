@@ -1,5 +1,5 @@
 //
-//  HomeTableViewController.swift
+//  HomeViewController.swift
 //  Jungle
 //
 //  Created by Jesse Bartola on 12/29/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct CellData {
+struct FeedData {
     let cell: Int!
     let name: String!
     let votes: Int!
@@ -18,11 +18,23 @@ struct CellData {
     let isOrg: Bool!
 }
 
+struct EventData {
+    let ngo: String!
+    let eventTitle: String!
+    let eventDate: NSDate!
+    let eventPicture: UIImage!
+    let participants: Int!
+}
+
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var cellDataArray = [CellData]()
+    var feedDataArray = [FeedData]()
+    var eventDataArray = [EventData]()
     
     @IBOutlet weak var contentTableView: UITableView!
+    
+    @IBOutlet weak var segmentControl: UISegmentedControl!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,9 +42,13 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         // Placeholder array of Cell Data. Beta version will populate this with data from Facebook
         // and other social networks available
 
-        cellDataArray = [CellData(cell: 1, name: "Jeremy Johnson", votes: 50, image: #imageLiteral(resourceName: "amazonjungle"), profile: #imageLiteral(resourceName: "manprofilepic"), location: "San Francisco, CA", isOrg: false),
-                         CellData(cell: 2, name: "Maria Smith", votes: 129, image: #imageLiteral(resourceName: "undertheocean"), profile: #imageLiteral(resourceName: "ladyprofilepic"), location: "Atlanta, GA", isOrg: true),
-                         CellData(cell: 3, name: "Marshall Mathers", votes: 5002, image: #imageLiteral(resourceName: "outerspace"), profile: #imageLiteral(resourceName: "manprofilepic"), location: "Seattle, WA", isOrg: false)]
+        feedDataArray = [FeedData(cell: 1, name: "Jeremy Johnson", votes: 50, image: #imageLiteral(resourceName: "amazonjungle"), profile: #imageLiteral(resourceName: "manprofilepic"), location: "San Francisco, CA", isOrg: false),
+                         FeedData(cell: 2, name: "Maria Smith", votes: 129, image: #imageLiteral(resourceName: "undertheocean"), profile: #imageLiteral(resourceName: "ladyprofilepic"), location: "Atlanta, GA", isOrg: true),
+                         FeedData(cell: 3, name: "Marshall Mathers", votes: 5002, image: #imageLiteral(resourceName: "outerspace"), profile: #imageLiteral(resourceName: "manprofilepic"), location: "Seattle, WA", isOrg: false)]
+        
+        eventDataArray = [EventData(ngo: "California Stormwatchers", eventTitle: "Regional Cleaup", eventDate: NSDate.init(timeIntervalSinceNow: 0), eventPicture: #imageLiteral(resourceName: "outerspace"), participants: 2839),
+                          EventData(ngo: "Gulf Protection Coalition", eventTitle: "Drain the Swamp", eventDate: NSDate.init(timeIntervalSinceNow: 232832), eventPicture: #imageLiteral(resourceName: "undertheocean"), participants: 98722),
+                          EventData(ngo: "Priciples of Cleanliness", eventTitle: "Sweep the Streets", eventDate: NSDate.init(timeIntervalSinceNow: 2308432), eventPicture: #imageLiteral(resourceName: "forestjungle"), participants: 720382)]
         
 
         self.contentTableView.delegate = self
@@ -56,60 +72,74 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return cellDataArray.count
+        // If we are in the first segment return the number of entries in the Feed array
+        if (segmentControl.selectedSegmentIndex == 0) {
+            return feedDataArray.count
+        }
+        
+        
+        return eventDataArray.count
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
-        let cell = Bundle.main.loadNibNamed("HomeTableViewCell", owner: self, options: nil)?.first as! HomeTableViewCell
         
-        cell.postImageView.image = cellDataArray[indexPath.row].image
-        cell.votesLabel.text = String(cellDataArray[indexPath.row].votes)
-        cell.nameLabel.text = cellDataArray[indexPath.row].name
-
-        //cell.layoutIfNeeded()
-        //cell.profileImageView.layer.cornerRadius = cell.profileImageView.frame.height / 2.0
+        // Check which nib we want to population our tableview with
         
-        cell.profileImageView.image = cellDataArray[indexPath.row].profile
-        
-        cell.locationLabel.text = cellDataArray[indexPath.row].location
-        if (cellDataArray[indexPath.row].isOrg!) {
-            cell.organizationStarImageView.image = #imageLiteral(resourceName: "Star")
+        if (segmentControl.selectedSegmentIndex == 0) {
+            
+            let cell = Bundle.main.loadNibNamed("FeedTableViewCell", owner: self, options: nil)?.first as! FeedTableViewCell
+            
+            cell.postImageView.image = feedDataArray[indexPath.row].image
+            cell.votesLabel.text = String(feedDataArray[indexPath.row].votes)
+            cell.nameLabel.text = feedDataArray[indexPath.row].name
+            cell.profileImageView.image = feedDataArray[indexPath.row].profile
+            
+            cell.locationLabel.text = feedDataArray[indexPath.row].location
+            
+            // Set the organization star if appropriate
+            if (feedDataArray[indexPath.row].isOrg!) {
+                cell.organizationStarImageView.image = #imageLiteral(resourceName: "Star")
+            }
+            
+            return cell
+        } else {
+            let cell = Bundle.main.loadNibNamed("EventTableViewCell", owner: self, options: nil)?.first as! EventTableViewCell
+            
+            cell.eventPicture.image = eventDataArray[indexPath.row].eventPicture
+            cell.participantsLabel.text = String(eventDataArray[indexPath.row].participants)
+            cell.ngoLabel.text = eventDataArray[indexPath.row].ngo
+            cell.eventTitleLabel.text = eventDataArray[indexPath.row].eventTitle
+            
+            let dateFormatter = DateFormatter()
+            //dateFormatter.dateFormat = "EEE, dd MMM yyyy hh:mm:ss +zzzz"
+            //let dateObj = dateFormatter.date(from: String(describing: eventDataArray[indexPath.row].eventDate))!
+            dateFormatter.dateFormat = "MM-dd-yyyy"
+            
+            cell.eventDateLabel.text = dateFormatter.string(from: eventDataArray[indexPath.row].eventDate as Date)
+            
+            
+            return cell
         }
-        
-        return cell
+
     }
     
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 300
+        if (segmentControl.selectedSegmentIndex == 0) {
+            return 300
+        }
+        
+        return 240
     }
+    
 
+    @IBAction func segmentControlChange(_ sender: AnyObject) {
+        
+        // Reload out data when the user switches between 'Feed' and 'Events' tab
+        contentTableView.reloadData()
+    }
     
-    /*
-     // Override to support rearranging the table view.
-     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-     
-     }
-     */
     
-    /*
-     // Override to support conditional rearranging of the table view.
-     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-     // Return false if you do not want the item to be re-orderable.
-     return true
-     }
-     */
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
 }

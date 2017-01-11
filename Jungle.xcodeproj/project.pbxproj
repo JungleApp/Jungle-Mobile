@@ -20,12 +20,13 @@
 		882A2BA51E23147B002E0753 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882A2BA41E23147B002E0753 /* HomeViewController.swift */; };
 		882A2BA81E2458C8002E0753 /* QuoraTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882A2BA61E2458C8002E0753 /* QuoraTableViewCell.swift */; };
 		882A2BA91E2458C8002E0753 /* QuoraTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 882A2BA71E2458C8002E0753 /* QuoraTableViewCell.xib */; };
+		882A2BAC1E25C558002E0753 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882A2BAA1E25C558002E0753 /* EventTableViewCell.swift */; };
+		882A2BAD1E25C558002E0753 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 882A2BAB1E25C558002E0753 /* EventTableViewCell.xib */; };
 		8877FC191E0DC326000CC844 /* QuoraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8877FC181E0DC326000CC844 /* QuoraViewController.swift */; };
-		8877FC1B1E0DC33D000CC844 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8877FC1A1E0DC33D000CC844 /* EventsViewController.swift */; };
 		8877FC1D1E0DC361000CC844 /* OrganizationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8877FC1C1E0DC361000CC844 /* OrganizationsViewController.swift */; };
 		8877FC1F1E0DC369000CC844 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8877FC1E1E0DC369000CC844 /* UserProfileViewController.swift */; };
-		88EFFE511E1202B7001FFA40 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EFFE4F1E1202B7001FFA40 /* HomeTableViewCell.swift */; };
-		88EFFE521E1202B7001FFA40 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88EFFE501E1202B7001FFA40 /* HomeTableViewCell.xib */; };
+		88EFFE511E1202B7001FFA40 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EFFE4F1E1202B7001FFA40 /* FeedTableViewCell.swift */; };
+		88EFFE521E1202B7001FFA40 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88EFFE501E1202B7001FFA40 /* FeedTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,12 +57,13 @@
 		882A2BA41E23147B002E0753 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		882A2BA61E2458C8002E0753 /* QuoraTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoraTableViewCell.swift; sourceTree = "<group>"; };
 		882A2BA71E2458C8002E0753 /* QuoraTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuoraTableViewCell.xib; sourceTree = "<group>"; };
+		882A2BAA1E25C558002E0753 /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		882A2BAB1E25C558002E0753 /* EventTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
 		8877FC181E0DC326000CC844 /* QuoraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoraViewController.swift; sourceTree = "<group>"; };
-		8877FC1A1E0DC33D000CC844 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		8877FC1C1E0DC361000CC844 /* OrganizationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrganizationsViewController.swift; sourceTree = "<group>"; };
 		8877FC1E1E0DC369000CC844 /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
-		88EFFE4F1E1202B7001FFA40 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
-		88EFFE501E1202B7001FFA40 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		88EFFE4F1E1202B7001FFA40 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		88EFFE501E1202B7001FFA40 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,14 +112,15 @@
 				88221BD71DEA56E8001DE416 /* ViewController.swift */,
 				88221BD91DEA56E8001DE416 /* Main.storyboard */,
 				882A2BA41E23147B002E0753 /* HomeViewController.swift */,
-				88EFFE4F1E1202B7001FFA40 /* HomeTableViewCell.swift */,
-				88EFFE501E1202B7001FFA40 /* HomeTableViewCell.xib */,
+				88EFFE4F1E1202B7001FFA40 /* FeedTableViewCell.swift */,
+				88EFFE501E1202B7001FFA40 /* FeedTableViewCell.xib */,
+				882A2BAA1E25C558002E0753 /* EventTableViewCell.swift */,
+				882A2BAB1E25C558002E0753 /* EventTableViewCell.xib */,
 				8877FC181E0DC326000CC844 /* QuoraViewController.swift */,
 				882A2BA61E2458C8002E0753 /* QuoraTableViewCell.swift */,
 				882A2BA71E2458C8002E0753 /* QuoraTableViewCell.xib */,
 				882A2BA01E20507B002E0753 /* OrganizationsTableViewController.swift */,
 				882A2BA11E20507B002E0753 /* OrganizationsTableViewController.xib */,
-				8877FC1A1E0DC33D000CC844 /* EventsViewController.swift */,
 				8877FC1C1E0DC361000CC844 /* OrganizationsViewController.swift */,
 				8877FC1E1E0DC369000CC844 /* UserProfileViewController.swift */,
 				88221BDC1DEA56E8001DE416 /* Assets.xcassets */,
@@ -196,6 +199,7 @@
 				TargetAttributes = {
 					88221BD11DEA56E8001DE416 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = W2P5R7TX5B;
 						ProvisioningStyle = Automatic;
 					};
 					88221BE51DEA56E8001DE416 = {
@@ -232,10 +236,11 @@
 			files = (
 				88221BE01DEA56E8001DE416 /* LaunchScreen.storyboard in Resources */,
 				88221BDD1DEA56E8001DE416 /* Assets.xcassets in Resources */,
-				88EFFE521E1202B7001FFA40 /* HomeTableViewCell.xib in Resources */,
+				88EFFE521E1202B7001FFA40 /* FeedTableViewCell.xib in Resources */,
 				882A2BA31E20507B002E0753 /* OrganizationsTableViewController.xib in Resources */,
 				882A2BA91E2458C8002E0753 /* QuoraTableViewCell.xib in Resources */,
 				88221BDB1DEA56E8001DE416 /* Main.storyboard in Resources */,
+				882A2BAD1E25C558002E0753 /* EventTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,12 +259,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8877FC191E0DC326000CC844 /* QuoraViewController.swift in Sources */,
+				882A2BAC1E25C558002E0753 /* EventTableViewCell.swift in Sources */,
 				88221BD81DEA56E8001DE416 /* ViewController.swift in Sources */,
 				8877FC1F1E0DC369000CC844 /* UserProfileViewController.swift in Sources */,
 				88221BD61DEA56E8001DE416 /* AppDelegate.swift in Sources */,
 				882A2BA51E23147B002E0753 /* HomeViewController.swift in Sources */,
-				88EFFE511E1202B7001FFA40 /* HomeTableViewCell.swift in Sources */,
-				8877FC1B1E0DC33D000CC844 /* EventsViewController.swift in Sources */,
+				88EFFE511E1202B7001FFA40 /* FeedTableViewCell.swift in Sources */,
 				882A2BA21E20507B002E0753 /* OrganizationsTableViewController.swift in Sources */,
 				882A2BA81E2458C8002E0753 /* QuoraTableViewCell.swift in Sources */,
 				8877FC1D1E0DC361000CC844 /* OrganizationsViewController.swift in Sources */,
@@ -399,7 +404,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = W2P5R7TX5B;
 				FRAMEWORK_SEARCH_PATHS = "/Users/Jesse/Documents/FacebookSDKs-iOS-4.17.0";
 				INFOPLIST_FILE = Jungle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -413,7 +418,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = W2P5R7TX5B;
 				FRAMEWORK_SEARCH_PATHS = "/Users/Jesse/Documents/FacebookSDKs-iOS-4.17.0";
 				INFOPLIST_FILE = Jungle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

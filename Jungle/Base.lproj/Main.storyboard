@@ -127,9 +127,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <sections/>
-                                <connections>
-                                    <outlet property="delegate" destination="CVh-mj-mb9" id="gvd-Tw-jtK"/>
-                                </connections>
                             </tableView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="a7G-EV-rpN">
                                 <frame key="frameInset" minX="50" minY="78" width="274" height="29"/>
@@ -138,6 +135,9 @@
                                     <segment title="Feed"/>
                                     <segment title="Events"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentControlChange:" destination="5Sg-4Q-l98" eventType="valueChanged" id="3wB-fw-iyM"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -145,6 +145,7 @@
                     <tabBarItem key="tabBarItem" title="Home" image="Home Filled" id="e0I-Nv-ZDS"/>
                     <connections>
                         <outlet property="contentTableView" destination="6ae-Vm-BfB" id="qss-ph-9IV"/>
+                        <outlet property="segmentControl" destination="a7G-EV-rpN" id="qD9-I8-kxJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U42-In-iUw" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="262" id="KGk-i7-Jjw" customClass="EventTableViewCell" customModule="Jungle" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="431" height="262"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="431" height="261.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conservation International" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6s-Gf-q74">
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hOX-iz-TUP"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1x-cK-nlb">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plant a Tree" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Art-jf-DHO">
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Until" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYA-X6-zbG">
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="January 22, 2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7T-HZ-hO3">
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Person" translatesAutoresizingMaskIntoConstraints="NO" id="tmN-9J-e3Y">
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="tmN-9J-e3Y" secondAttribute="height" multiplier="1:1" id="SRJ-a4-ybQ"/>
+                            <constraint firstAttribute="width" constant="40" id="fF4-A4-Xg3"/>
+                            <constraint firstAttribute="height" constant="40" id="hkz-XA-g6H"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="leadingMargin" secondItem="Art-jf-DHO" secondAttribute="leading" id="1oW-S2-NaW"/>
+                    <constraint firstItem="tmN-9J-e3Y" firstAttribute="leading" secondItem="m1x-cK-nlb" secondAttribute="trailing" constant="8" id="6Ff-fz-G49"/>
+                    <constraint firstItem="y6s-Gf-q74" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="9" id="8Df-hq-3lR"/>
+                    <constraint firstItem="R7T-HZ-hO3" firstAttribute="leading" secondItem="gYA-X6-zbG" secondAttribute="trailing" constant="8" id="95o-P5-x8D"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="gYA-X6-zbG" secondAttribute="bottom" constant="13.5" id="ASb-NA-xI4"/>
+                    <constraint firstItem="hOX-iz-TUP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="35" id="Ak2-hA-Nwt"/>
+                    <constraint firstItem="Art-jf-DHO" firstAttribute="top" secondItem="hOX-iz-TUP" secondAttribute="bottom" constant="8" id="Hgs-bm-sQ2"/>
+                    <constraint firstAttribute="topMargin" secondItem="y6s-Gf-q74" secondAttribute="top" id="Hnq-Uh-O5v"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="hOX-iz-TUP" secondAttribute="leading" id="Qx5-sL-ibd"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="m1x-cK-nlb" secondAttribute="bottom" constant="23.5" id="XRd-Jg-Vv7"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="tmN-9J-e3Y" secondAttribute="trailing" id="XeB-Ol-WLV"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="hOX-iz-TUP" secondAttribute="bottom" constant="71.5" id="bzd-MH-QyW"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="gYA-X6-zbG" secondAttribute="leading" id="hB9-u4-o9a"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="R7T-HZ-hO3" secondAttribute="bottom" constant="13.5" id="nie-yQ-zy1"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="tmN-9J-e3Y" secondAttribute="bottom" constant="14.5" id="r2O-cP-Y8p"/>
+                    <constraint firstItem="hOX-iz-TUP" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="wRH-Ol-Ayv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="eventDateLabel" destination="R7T-HZ-hO3" id="8iz-gQ-2tY"/>
+                <outlet property="eventPicture" destination="hOX-iz-TUP" id="GKr-Pd-ph4"/>
+                <outlet property="eventTitleLabel" destination="Art-jf-DHO" id="dOg-00-Q8R"/>
+                <outlet property="ngoLabel" destination="y6s-Gf-q74" id="GlG-Z8-WQl"/>
+                <outlet property="participantsLabel" destination="m1x-cK-nlb" id="Hxt-fe-eWP"/>
+            </connections>
+            <point key="canvasLocation" x="89.5" y="177"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Person" width="24" height="24"/>
+    </resources>
+</document>
