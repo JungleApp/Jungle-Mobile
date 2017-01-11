@@ -17,31 +17,17 @@
                 <frame key="frameInset" width="431" height="159"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do glaciers stay cold in the summer time?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ei-ML-QRv">
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1w-ud-nfa">
                         <string key="text">Summer time isn't always hot everywhere in the world! The average temperature at the poles never usually climbs above 0 degrees!</string>
-                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="99999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKo-Ha-eka">
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ede-38-Bms">
-                        <constraints>
-                            <constraint firstAttribute="height" constant="30" id="ev2-Mi-8dt"/>
-                            <constraint firstAttribute="width" constant="30" id="vfO-cG-dc7" userLabel="width = 30"/>
-                        </constraints>
-                        <state key="normal" title="Button" image="uparrow"/>
-                    </button>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXG-eZ-IKF">
-                        <constraints>
-                            <constraint firstAttribute="width" constant="30" id="DrR-N9-xB4" userLabel="width = 30"/>
-                            <constraint firstAttribute="height" constant="30" id="rpq-DY-E25"/>
-                        </constraints>
-                        <state key="normal" title="Button" image="downarrow"/>
-                    </button>
                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWr-7W-NLu">
                         <frame key="frameInset" minX="301" minY="123" width="30" height="30"/>
                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
@@ -63,11 +49,25 @@
                             <constraint firstAttribute="width" secondItem="KXA-pn-Uo2" secondAttribute="height" multiplier="1:1" id="ObG-SV-Xef"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do glaciers stay cold in the summer time?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ei-ML-QRv">
-                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="99999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKo-Ha-eka">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ede-38-Bms">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="ev2-Mi-8dt"/>
+                            <constraint firstAttribute="width" constant="30" id="vfO-cG-dc7" userLabel="width = 30"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="uparrow"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXG-eZ-IKF">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="DrR-N9-xB4" userLabel="width = 30"/>
+                            <constraint firstAttribute="height" constant="30" id="rpq-DY-E25"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="downarrow"/>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottomMargin" secondItem="EXG-eZ-IKF" secondAttribute="bottom" constant="0.5" id="9hI-fP-HJB"/>
@@ -81,7 +81,7 @@
                     <constraint firstAttribute="bottomMargin" secondItem="KXA-pn-Uo2" secondAttribute="bottom" constant="47.5" id="eJh-ZF-wHG"/>
                     <constraint firstItem="0ei-ML-QRv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="9" id="ftp-8H-WuL"/>
                     <constraint firstItem="909-Uy-4T1" firstAttribute="leading" secondItem="yWr-7W-NLu" secondAttribute="trailing" constant="8" id="h3z-dj-sd9"/>
-                    <constraint firstAttribute="leadingMargin" secondItem="Ede-38-Bms" secondAttribute="leading" id="l2h-rm-ihs"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="Ede-38-Bms" secondAttribute="leading" constant="-9" id="l2h-rm-ihs"/>
                     <constraint firstItem="UKo-Ha-eka" firstAttribute="leading" secondItem="Ede-38-Bms" secondAttribute="trailing" constant="8" id="lEu-Tg-sxA"/>
                     <constraint firstAttribute="bottomMargin" secondItem="909-Uy-4T1" secondAttribute="bottom" constant="0.5" id="rZM-vM-0t6"/>
                     <constraint firstAttribute="trailingMargin" secondItem="KXA-pn-Uo2" secondAttribute="trailing" id="sz2-MH-MCD"/>
