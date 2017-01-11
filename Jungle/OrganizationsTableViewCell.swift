@@ -10,6 +10,11 @@ import UIKit
 
 class OrganizationsTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var organizationNameLabel: UILabel!
+    @IBOutlet weak var openEventsLabel: UILabel!
+    @IBOutlet weak var hostedEventsLabel: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

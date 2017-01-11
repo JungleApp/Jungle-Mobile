@@ -84,7 +84,7 @@
         <!--Organizations-->
         <scene sceneID="g9w-C1-z30">
             <objects>
-                <viewController id="gY3-3g-6AU" sceneMemberID="viewController">
+                <viewController id="gY3-3g-6AU" customClass="OrganizationsViewController" customModule="Jungle" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ntI-yf-0Tn"/>
                         <viewControllerLayoutGuide type="bottom" id="ih2-86-Aff"/>
@@ -119,6 +119,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Organizations" image="Globe" id="wW7-H5-a1E"/>
+                    <connections>
+                        <outlet property="orgTableView" destination="huh-uo-EBg" id="Bha-VE-WOf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ixf-n7-o8Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -66,6 +66,11 @@
                     <constraint firstItem="AYn-LP-oei" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="20" id="zKF-zx-aEW"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="hostedEventsLabel" destination="3ph-I9-Idt" id="57w-Tq-c7C"/>
+                <outlet property="openEventsLabel" destination="ptY-X4-sqU" id="GuK-9r-mYI"/>
+                <outlet property="organizationNameLabel" destination="zWX-zD-pSm" id="pZo-Dm-iGe"/>
+            </connections>
             <point key="canvasLocation" x="78.5" y="-136.5"/>
         </tableViewCell>
     </objects>
