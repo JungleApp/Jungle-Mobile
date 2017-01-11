@@ -15,13 +15,13 @@
 		88221BEB1DEA56E8001DE416 /* JungleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88221BEA1DEA56E8001DE416 /* JungleTests.swift */; };
 		88221BF71DEBBA9A001DE416 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88221BF61DEBBA9A001DE416 /* FBSDKLoginKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		88221BF91DEC9EF3001DE416 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88221BF81DEC9EF3001DE416 /* FBSDKCoreKit.framework */; };
-		882A2BA21E20507B002E0753 /* OrganizationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882A2BA01E20507B002E0753 /* OrganizationsTableViewController.swift */; };
-		882A2BA31E20507B002E0753 /* OrganizationsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 882A2BA11E20507B002E0753 /* OrganizationsTableViewController.xib */; };
 		882A2BA51E23147B002E0753 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882A2BA41E23147B002E0753 /* HomeViewController.swift */; };
 		882A2BA81E2458C8002E0753 /* QuoraTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882A2BA61E2458C8002E0753 /* QuoraTableViewCell.swift */; };
 		882A2BA91E2458C8002E0753 /* QuoraTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 882A2BA71E2458C8002E0753 /* QuoraTableViewCell.xib */; };
 		882A2BAC1E25C558002E0753 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882A2BAA1E25C558002E0753 /* EventTableViewCell.swift */; };
 		882A2BAD1E25C558002E0753 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 882A2BAB1E25C558002E0753 /* EventTableViewCell.xib */; };
+		882A2BB21E2603B6002E0753 /* OrganizationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882A2BB01E2603B6002E0753 /* OrganizationsTableViewCell.swift */; };
+		882A2BB31E2603B6002E0753 /* OrganizationsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 882A2BB11E2603B6002E0753 /* OrganizationsTableViewCell.xib */; };
 		8877FC191E0DC326000CC844 /* QuoraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8877FC181E0DC326000CC844 /* QuoraViewController.swift */; };
 		8877FC1D1E0DC361000CC844 /* OrganizationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8877FC1C1E0DC361000CC844 /* OrganizationsViewController.swift */; };
 		8877FC1F1E0DC369000CC844 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8877FC1E1E0DC369000CC844 /* UserProfileViewController.swift */; };
@@ -52,13 +52,13 @@
 		88221BEC1DEA56E8001DE416 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88221BF61DEBBA9A001DE416 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../../FacebookSDKs-iOS-4.17.0/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
 		88221BF81DEC9EF3001DE416 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../../FacebookSDKs-iOS-4.17.0/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
-		882A2BA01E20507B002E0753 /* OrganizationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrganizationsTableViewController.swift; sourceTree = "<group>"; };
-		882A2BA11E20507B002E0753 /* OrganizationsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrganizationsTableViewController.xib; sourceTree = "<group>"; };
 		882A2BA41E23147B002E0753 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		882A2BA61E2458C8002E0753 /* QuoraTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoraTableViewCell.swift; sourceTree = "<group>"; };
 		882A2BA71E2458C8002E0753 /* QuoraTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuoraTableViewCell.xib; sourceTree = "<group>"; };
 		882A2BAA1E25C558002E0753 /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		882A2BAB1E25C558002E0753 /* EventTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
+		882A2BB01E2603B6002E0753 /* OrganizationsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrganizationsTableViewCell.swift; sourceTree = "<group>"; };
+		882A2BB11E2603B6002E0753 /* OrganizationsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrganizationsTableViewCell.xib; sourceTree = "<group>"; };
 		8877FC181E0DC326000CC844 /* QuoraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoraViewController.swift; sourceTree = "<group>"; };
 		8877FC1C1E0DC361000CC844 /* OrganizationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrganizationsViewController.swift; sourceTree = "<group>"; };
 		8877FC1E1E0DC369000CC844 /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
@@ -119,9 +119,9 @@
 				8877FC181E0DC326000CC844 /* QuoraViewController.swift */,
 				882A2BA61E2458C8002E0753 /* QuoraTableViewCell.swift */,
 				882A2BA71E2458C8002E0753 /* QuoraTableViewCell.xib */,
-				882A2BA01E20507B002E0753 /* OrganizationsTableViewController.swift */,
-				882A2BA11E20507B002E0753 /* OrganizationsTableViewController.xib */,
 				8877FC1C1E0DC361000CC844 /* OrganizationsViewController.swift */,
+				882A2BB01E2603B6002E0753 /* OrganizationsTableViewCell.swift */,
+				882A2BB11E2603B6002E0753 /* OrganizationsTableViewCell.xib */,
 				8877FC1E1E0DC369000CC844 /* UserProfileViewController.swift */,
 				88221BDC1DEA56E8001DE416 /* Assets.xcassets */,
 				88221BDE1DEA56E8001DE416 /* LaunchScreen.storyboard */,
@@ -237,9 +237,9 @@
 				88221BE01DEA56E8001DE416 /* LaunchScreen.storyboard in Resources */,
 				88221BDD1DEA56E8001DE416 /* Assets.xcassets in Resources */,
 				88EFFE521E1202B7001FFA40 /* FeedTableViewCell.xib in Resources */,
-				882A2BA31E20507B002E0753 /* OrganizationsTableViewController.xib in Resources */,
 				882A2BA91E2458C8002E0753 /* QuoraTableViewCell.xib in Resources */,
 				88221BDB1DEA56E8001DE416 /* Main.storyboard in Resources */,
+				882A2BB31E2603B6002E0753 /* OrganizationsTableViewCell.xib in Resources */,
 				882A2BAD1E25C558002E0753 /* EventTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				882A2BB21E2603B6002E0753 /* OrganizationsTableViewCell.swift in Sources */,
 				8877FC191E0DC326000CC844 /* QuoraViewController.swift in Sources */,
 				882A2BAC1E25C558002E0753 /* EventTableViewCell.swift in Sources */,
 				88221BD81DEA56E8001DE416 /* ViewController.swift in Sources */,
@@ -265,7 +266,6 @@
 				88221BD61DEA56E8001DE416 /* AppDelegate.swift in Sources */,
 				882A2BA51E23147B002E0753 /* HomeViewController.swift in Sources */,
 				88EFFE511E1202B7001FFA40 /* FeedTableViewCell.swift in Sources */,
-				882A2BA21E20507B002E0753 /* OrganizationsTableViewController.swift in Sources */,
 				882A2BA81E2458C8002E0753 /* QuoraTableViewCell.swift in Sources */,
 				8877FC1D1E0DC361000CC844 /* OrganizationsViewController.swift in Sources */,
 			);
