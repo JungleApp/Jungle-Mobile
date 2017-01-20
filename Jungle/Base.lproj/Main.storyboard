@@ -228,7 +228,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="xsa-dF-add">
             <objects>
-                <tabBarController id="ed7-fz-v81" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" id="ed7-fz-v81" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Grw-OF-jFM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
