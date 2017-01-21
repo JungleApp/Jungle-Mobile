@@ -101,14 +101,23 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joseph's Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e00-cB-YdZ">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="e00-cB-YdZ" firstAttribute="centerX" secondItem="Eeg-ak-IRm" secondAttribute="centerX" id="uZd-Zt-Uxl"/>
+                            <constraint firstItem="e00-cB-YdZ" firstAttribute="top" secondItem="Pfa-Me-nJY" secondAttribute="bottom" constant="63" id="yal-RV-Gis"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="Profile" id="S15-ud-9iH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vwh-9b-gHQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="950" y="851"/>
+            <point key="canvasLocation" x="949.60000000000002" y="850.52473763118451"/>
         </scene>
         <!--Organizations-->
         <scene sceneID="g9w-C1-z30">
