@@ -27,8 +27,7 @@
 		882A2BB91E282DA6002E0753 /* CategoriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 882A2BB71E282DA6002E0753 /* CategoriesCollectionViewCell.xib */; };
 		8877FC191E0DC326000CC844 /* QuoraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8877FC181E0DC326000CC844 /* QuoraViewController.swift */; };
 		8877FC1D1E0DC361000CC844 /* OrganizationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8877FC1C1E0DC361000CC844 /* OrganizationsViewController.swift */; };
-		8877FC1F1E0DC369000CC844 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8877FC1E1E0DC369000CC844 /* UserProfileViewController.swift */; };
-		88918DFB1E31E55A00A70774 /* SlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88918DFA1E31E55A00A70774 /* SlideMenuController.swift */; };
+		8877FC1F1E0DC369000CC844 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8877FC1E1E0DC369000CC844 /* ProfileViewController.swift */; };
 		88EFFE511E1202B7001FFA40 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EFFE4F1E1202B7001FFA40 /* FeedTableViewCell.swift */; };
 		88EFFE521E1202B7001FFA40 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88EFFE501E1202B7001FFA40 /* FeedTableViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -68,8 +67,7 @@
 		882A2BB71E282DA6002E0753 /* CategoriesCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoriesCollectionViewCell.xib; sourceTree = "<group>"; };
 		8877FC181E0DC326000CC844 /* QuoraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoraViewController.swift; sourceTree = "<group>"; };
 		8877FC1C1E0DC361000CC844 /* OrganizationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrganizationsViewController.swift; sourceTree = "<group>"; };
-		8877FC1E1E0DC369000CC844 /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
-		88918DFA1E31E55A00A70774 /* SlideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideMenuController.swift; path = "../../../../Downloads/SlideMenuControllerSwift-master/Source/SlideMenuController.swift"; sourceTree = "<group>"; };
+		8877FC1E1E0DC369000CC844 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		88EFFE4F1E1202B7001FFA40 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		88EFFE501E1202B7001FFA40 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,7 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				88221BD51DEA56E8001DE416 /* AppDelegate.swift */,
-				88918DFA1E31E55A00A70774 /* SlideMenuController.swift */,
 				88221BD71DEA56E8001DE416 /* ViewController.swift */,
 				88221BD91DEA56E8001DE416 /* Main.storyboard */,
 				882A2BA41E23147B002E0753 /* HomeViewController.swift */,
@@ -134,7 +131,7 @@
 				882A2BB41E26E679002E0753 /* CategoriesViewController.swift */,
 				882A2BB61E282DA6002E0753 /* CategoriesCollectionViewCell.swift */,
 				882A2BB71E282DA6002E0753 /* CategoriesCollectionViewCell.xib */,
-				8877FC1E1E0DC369000CC844 /* UserProfileViewController.swift */,
+				8877FC1E1E0DC369000CC844 /* ProfileViewController.swift */,
 				88221BDC1DEA56E8001DE416 /* Assets.xcassets */,
 				88221BDE1DEA56E8001DE416 /* LaunchScreen.storyboard */,
 				88221BE11DEA56E8001DE416 /* Info.plist */,
@@ -276,9 +273,8 @@
 				8877FC191E0DC326000CC844 /* QuoraViewController.swift in Sources */,
 				882A2BAC1E25C558002E0753 /* EventTableViewCell.swift in Sources */,
 				88221BD81DEA56E8001DE416 /* ViewController.swift in Sources */,
-				8877FC1F1E0DC369000CC844 /* UserProfileViewController.swift in Sources */,
+				8877FC1F1E0DC369000CC844 /* ProfileViewController.swift in Sources */,
 				882A2BB81E282DA6002E0753 /* CategoriesCollectionViewCell.swift in Sources */,
-				88918DFB1E31E55A00A70774 /* SlideMenuController.swift in Sources */,
 				88221BD61DEA56E8001DE416 /* AppDelegate.swift in Sources */,
 				882A2BA51E23147B002E0753 /* HomeViewController.swift in Sources */,
 				88EFFE511E1202B7001FFA40 /* FeedTableViewCell.swift in Sources */,

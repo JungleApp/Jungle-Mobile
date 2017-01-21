@@ -56,7 +56,6 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Jungle" id="XnF-Po-RNf">
-                                        <barButtonItem key="leftBarButtonItem" image="Menu" id="w8R-18-RVO"/>
                                         <barButtonItem key="rightBarButtonItem" image="Search Filled" id="KP1-WW-LcL"/>
                                     </navigationItem>
                                 </items>
@@ -81,6 +80,36 @@
             </objects>
             <point key="canvasLocation" x="1812" y="118.29085457271366"/>
         </scene>
+        <!--Profile-->
+        <scene sceneID="ejy-Tt-qw9">
+            <objects>
+                <viewController id="T7z-Jt-shY" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pfa-Me-nJY"/>
+                        <viewControllerLayoutGuide type="bottom" id="h6u-qO-Um3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Eeg-ak-IRm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KQc-j2-gkw">
+                                <frame key="frameInset" minY="20" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Jungle" id="I2F-29-Dqq">
+                                        <barButtonItem key="rightBarButtonItem" image="Search Filled" id="nTG-Gl-y79"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="Profile" id="S15-ud-9iH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vwh-9b-gHQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="950" y="851"/>
+        </scene>
         <!--Organizations-->
         <scene sceneID="g9w-C1-z30">
             <objects>
@@ -103,7 +132,6 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Jungle" id="fg6-8d-EqQ">
-                                        <barButtonItem key="leftBarButtonItem" image="Menu" id="wbp-Vi-AwH"/>
                                         <barButtonItem key="rightBarButtonItem" image="Search Filled" id="IOu-zM-Uf0"/>
                                     </navigationItem>
                                 </items>
@@ -144,7 +172,6 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Jungle" id="RWG-nD-15U">
-                                        <barButtonItem key="leftBarButtonItem" image="Menu" id="uwH-Gw-ZMH"/>
                                         <barButtonItem key="rightBarButtonItem" image="Search Filled" id="cyf-eZ-Hb6"/>
                                     </navigationItem>
                                 </items>
@@ -196,7 +223,6 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Jungle" id="Zsi-S3-PCo">
-                                        <barButtonItem key="leftBarButtonItem" image="Menu" id="76A-5M-OuT"/>
                                         <barButtonItem key="rightBarButtonItem" image="Search Filled" id="H0P-c3-a2C"/>
                                     </navigationItem>
                                 </items>
@@ -239,6 +265,7 @@
                         <segue destination="Le7-Wl-Qx5" kind="relationship" relationship="viewControllers" id="Bjy-Uf-WyX"/>
                         <segue destination="i0X-7r-NpC" kind="relationship" relationship="viewControllers" id="AdS-Uv-bXa"/>
                         <segue destination="gY3-3g-6AU" kind="relationship" relationship="viewControllers" id="VRF-jw-1fv"/>
+                        <segue destination="T7z-Jt-shY" kind="relationship" relationship="viewControllers" id="Lht-hj-exi"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lde-Lb-eoN" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -249,7 +276,7 @@
     <resources>
         <image name="Globe" width="25" height="25"/>
         <image name="Home Filled" width="25" height="25"/>
-        <image name="Menu" width="25" height="25"/>
+        <image name="Profile" width="25" height="25"/>
         <image name="Question" width="25" height="25"/>
         <image name="Search Filled" width="25" height="25"/>
         <image name="Sheets" width="25" height="25"/>

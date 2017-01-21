@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class UserProfileViewController: UIViewController {
+class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         
