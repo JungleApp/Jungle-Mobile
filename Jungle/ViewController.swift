@@ -21,11 +21,15 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         let centerx = self.view.center.x
         let centery = self.view.center.y
         
+        // Don't worry about Facebook login for now
+        
 //        let loginButton: FBSDKLoginButton = {
 //            let button = FBSDKLoginButton()
 //            button.readPermissions = ["email"]
 //            return button
 //        }()
+        
+        loginButton.layer.cornerRadius = 10
         
         self.view.backgroundColor = UIColor(red: CGFloat(82.0), green: CGFloat(170.0), blue: CGFloat(94.0), alpha: CGFloat(1.0))
 

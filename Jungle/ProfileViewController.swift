@@ -11,6 +11,12 @@ import UIKit
 
 class ProfileViewController: UIViewController {
     
+    @IBOutlet weak var profileNameLabel: UILabel!
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()

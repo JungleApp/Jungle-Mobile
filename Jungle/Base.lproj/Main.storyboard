@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,13 +22,22 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jaB-h3-zma">
                                 <frame key="frameInset" minX="93" minY="456" width="189" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                <color key="backgroundColor" red="0.2395416796207428" green="0.85121840238571167" blue="0.05555308610200882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="performLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="knr-CT-h8h"/>
                                     <segue destination="ed7-fz-v81" kind="show" id="GGR-3o-BL9"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jungle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YBb-13-Tt6">
+                                <frame key="frameInset" minX="91" minY="66" width="192" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="53"/>
+                                <color key="textColor" red="0.2395416796207428" green="0.85121840238571167" blue="0.05555308610200882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -83,7 +93,7 @@
         <!--Profile-->
         <scene sceneID="ejy-Tt-qw9">
             <objects>
-                <viewController id="T7z-Jt-shY" sceneMemberID="viewController">
+                <viewController id="T7z-Jt-shY" customClass="ProfileViewController" customModule="Jungle" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Pfa-Me-nJY"/>
                         <viewControllerLayoutGuide type="bottom" id="h6u-qO-Um3"/>
@@ -106,14 +116,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tR1-HR-rB4">
+                                <frame key="frameInset" minX="30" minY="136" width="130" height="130"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="tR1-HR-rB4" firstAttribute="leading" secondItem="Eeg-ak-IRm" secondAttribute="leadingMargin" constant="14" id="25z-2W-iI0"/>
                             <constraint firstItem="e00-cB-YdZ" firstAttribute="centerX" secondItem="Eeg-ak-IRm" secondAttribute="centerX" id="uZd-Zt-Uxl"/>
                             <constraint firstItem="e00-cB-YdZ" firstAttribute="top" secondItem="Pfa-Me-nJY" secondAttribute="bottom" constant="63" id="yal-RV-Gis"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="Profile" id="S15-ud-9iH"/>
+                    <connections>
+                        <outlet property="profileNameLabel" destination="e00-cB-YdZ" id="Ytx-Ft-UIA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vwh-9b-gHQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

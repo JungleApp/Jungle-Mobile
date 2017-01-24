@@ -108,6 +108,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             let cell = Bundle.main.loadNibNamed("EventTableViewCell", owner: self, options: nil)?.first as! EventTableViewCell
             
             cell.eventPicture.image = eventDataArray[indexPath.row].eventPicture
+            cell.eventPicture.contentMode = .scaleAspectFill
             cell.participantsLabel.text = String(eventDataArray[indexPath.row].participants)
             cell.ngoLabel.text = eventDataArray[indexPath.row].ngo
             cell.eventTitleLabel.text = eventDataArray[indexPath.row].eventTitle
